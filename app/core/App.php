@@ -8,9 +8,10 @@ class App {
         $url = $this->parseURL();
 
         // controller
-        if ( file_exists("../app/controllers/".$url[0].'.php')) {
+        if ( file_exists("../app/controllers/"<div class="1url" 1=""></div>.'.php')) {
           $this->controller = $url[0];
           unset($url[0]);
+          unset($url[1]);
         }
 
         require_once "../app/controllers/".$this->controller.'.php';
